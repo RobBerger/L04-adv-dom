@@ -17,6 +17,7 @@ function sendMessage() {
     let pTag = document.createElement("p");
     pTag.innerHTML = "This is my message.";
     document.body.appendChild(pTag);
+    myBtn.removeEventListener('click', sendMessage)
 }
 
 myBtn.addEventListener('click', sendMessage);
