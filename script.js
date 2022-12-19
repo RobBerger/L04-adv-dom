@@ -1,15 +1,13 @@
-function clickMe() {
-    alert("Hello World!");
-  }
+let myBtn = document.getElementById('myBtn');
 
-  let myBtn = document.getElementById('myBtn');
 myBtn.onclick = function () {
-    alert("Hello World, I am using DOM properties to handle events!");
-} 
-
-function sayHelloWorld() {
-    alert("Hello World, from a named function!");
+    alert("FIRST ONCLICK");
+    myBtn.style.color = "blue";
 }
 
-let btn = document.getElementById('btn');
-btn.onclick = sayHelloWorld;
+myBtn.onclick = function () {
+    alert("SECOND ONCLICK - DYNAMICALLY ADDS A <P> TAG WITH A MESSAGE");
+    let pTag = document.createElement("p");
+    pTag.innerHTML = "This is my message.";
+    document.body.appendChild(pTag);
+}
