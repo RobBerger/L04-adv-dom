@@ -1,8 +1,4 @@
-function nodeChanges(){
-    var linkitem = document.getElementById('link');
-    console.log(linkitem.hasAttribute('href'));
-    console.log(linkitem.getAttribute('href'));
-
-    linkitem.setAttribute('href',"https://en.wikipedia.org/wiki/HTML");
-    console.log(linkitem.getAttribute('href'));
+function addClassOne() {
+    const divElem1 = document.getElementById('id1');
+    divElem1.className = 'classOne';
 }
