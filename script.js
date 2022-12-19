@@ -1,4 +1,4 @@
-function changeColor(){
-    let elem = document.getElementById('cssid');
-    elem.style.color = 'blue';
+function changeColor() {
+    let elem = document.getElementById('shapeid');
+    elem.style.backgroundColor = 'blue';
 }
